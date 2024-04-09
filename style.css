@@ -1,62 +1,88 @@
-        *{
+       *{
             margin: 0;
-            padding: 0;
-            box-sizing: border-box;
+            padding: 0;box-sizing: border-box;
         }
 
         body{
-            background-color: #000;
-            color: #fff;
+            background-image: linear-gradient(to right, #1c043f, #03122c);
             display: flex;
             flex-direction: column;
-            align-items: center;
-            justify-content: center;
             height: 100vh;
+            align-items: center;
+            /* justify-content: center; */
             gap: 2rem;
+            color: white;
         }
 
-        #div1{
-            display: flex;
-            gap: 1rem;
-            flex-wrap: wrap;
+        h1{
+            margin-top: 1rem;
         }
-        
-        #inputValues{
-            width: 33rem;
-            height: 2.5rem;
-            border-radius: 0.5rem;
+
+        form{
+            width: 21rem;
+            display: grid;
+            grid-template-columns: 1fr 0.3fr;
+            gap: 1rem;
+        }
+
+        #inputValue{
             padding: 0.5rem 1rem;
+            border-radius: 0.5rem;
+            border: none;
             outline: none;
             font-size: medium;
         }
 
-        button{
-            padding: 0.5rem 1.5rem;
+        #addBtn{
+            padding: 0.5rem 1rem;
+            border-radius: 0.5rem;
             font-size: medium;
-            border-radius: 1rem;
-            background-color: yellow;
+            background-color: rgb(29, 125, 162);
+            color: white;
+            border: none;
+            outline: none;
             cursor: pointer;
         }
 
-        button:hover{
-            background-color: #000;
-            color: yellow;
-            border: 2px solid yellow;
+        #addBtn:hover{
+            box-shadow: 0px 8px 10px 0px #000;
+            color: #000;
         }
 
-        .main_todo_list{
-            width: 33rem;
+
+        div{
+            width: 21rem;
             display: grid;
-            grid-template-columns: 1fr 0.3fr;
-            align-items: center;
-            height: auto;
-            gap: 2rem;
-            margin-bottom: 1rem;
+            grid-template-columns: 1fr 0.2fr;
+            padding: 0.5rem;
+            background-color: #000;
+            border-radius: 0.5rem;
+            align-content: center;
+            justify-content: center;
+            margin: 0.5rem;
         }
 
         li{
-            font-size: larger;
+            font-size: large;
+            margin-left: 0.3rem;
+            list-style-type: none;
+            color: #fff;
         }
 
-        
+        .deleteBtn{
+            padding: 0.2rem 0.5rem;
+            font-size: medium;
+            background-color: rgb(221, 37, 37);
+            border: none;
+            outline: none;
+            color: white;
+            border-radius: 0.5rem;
+            cursor: pointer;
+            border: 2px solid rgb(221, 37, 37);
+        }
 
+        .deleteBtn:hover{
+            background-color: #000;
+            border: 2px solid rgb(221, 37, 37);
+            color: rgb(221, 37, 37);
+        }
